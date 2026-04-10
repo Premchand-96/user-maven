@@ -1,0 +1,5 @@
+/home/ec2-user/user-maven/registration-app/src/main/java/entity/User.java
+/home/ec2-user/user-maven/registration-app/src/main/java/service/UserService.java
+/home/ec2-user/user-maven/registration-app/src/main/java/controller/UserController.java
+/home/ec2-user/user-maven/registration-app/src/main/java/com/example/registrationapp/RegistrationAppApplication.java
+/home/ec2-user/user-maven/registration-app/src/main/java/repository/UserRepository.java
