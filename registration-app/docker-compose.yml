@@ -5,8 +5,8 @@ services:
     image: mysql:8
     container_name: mysql-container
     environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: registration_db
+      MYSQL_ROOT_PASSWORD: prem
+      MYSQL_DATABASE: mydb
     ports:
       - "3307:3306"
     volumes:
@@ -27,8 +27,8 @@ services:
       - "8081:8081"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/registration_db?createDatabaseIfNotExist=true
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root123
+      SPRING_DATASOURCE_USERNAME: myuser
+      SPRING_DATASOURCE_PASSWORD: mypassword
 
 volumes:
   mysql_data:
