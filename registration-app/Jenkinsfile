@@ -32,8 +32,6 @@ pipeline {
             steps {
                 dir('registration-app') {
                     sh '''
-                    pwd
-                    ls -la
                     docker compose down || true
                     '''
                 }
@@ -44,9 +42,7 @@ pipeline {
             steps {
                 dir('registration-app') {
                     sh '''
-                    pwd
-                    ls -la
-                    docker compose up -d --build
+                    DOCKER_BUILDKIT=0 docker compose up -d --build
                     '''
                 }
             }
